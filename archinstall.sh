@@ -1,12 +1,12 @@
-####################################
-#  Arch Linux Installation Script  #
-# Created by paradoxxdev on GitHub #
-####################################
+#########################################
+#    Arch Linux Installation Script     #
+#  Created by theparadoxxdev on GitHub  #
+#########################################
 
-echo " ----------------------------------- "
-echo "|  Arch Linux Installation Script   |"
-echo "| Created by paradoxxdev on GitHub  |"
-echo " -----------------------------------"
+echo "/---------------------------------------\ "
+echo "|    Arch Linux Installation Script     |"
+echo "|  Created by theparadoxxdev on GitHub  |"
+echo "\---------------------------------------/"
 echo ""
 
 # Check if the script is running as root
@@ -71,4 +71,18 @@ echo ""
 echo "Script will use /dev/"$driveid" as OS drive."
 echo ""
 echo ""
+
+# A few questions before using parted to partition the drive
+
+read -p "Do you want swap space? (y/n) " swapyn
+# If the user wants swap space, then ask how big they want the swap to be in GB 
+if $swapyn == "y" then
+  read -p "How big do you want your swap space to be? (in GB) " swapsize
+  elif $driveid == nvme* then
+  echo "Swap will be "$swapsize"GB in size on /dev/"$driveid"p2"
+  else
+  echo "Swap will be "$swapsize"GB in size on /dev/"$driveid"2"
+fi
+
+
 
