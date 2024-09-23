@@ -1,5 +1,5 @@
 # Arch-Linux-Install-Script
- An easy to use installer script for Arch Linux!
+ An easy to use installer script that just works for Arch Linux!
 
 !!!THIS IS CURRENTLY IN DEVELOPMENT, AND IS NOT FUCTIONAL AT THIS TIME!!!
 
