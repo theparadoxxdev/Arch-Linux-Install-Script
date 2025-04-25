@@ -19,7 +19,7 @@ echo "##### Script has root access #####"
 echo 
 echo 
 echo "This script is intended to install the BARE MINIMUM system to boot into Arch Linux."
-echo "Any additional packages (ie. a DE) will be need to be installed seperately."
+echo "Any additional packages (ie. a DE) will be need to be installed separately."
 echo "This is NOT an official script, and comes with NO WARRANTY."
 echo 
 echo "An internet connection is required to install Arch Linux. The script will now confirm internet connectivity..."
@@ -42,11 +42,11 @@ echo "A few things before we start:"
 echo 
 echo "1) Ensure you know the disk identifier of the drive you want to install Arch Linux on (ie. nvme0n1, sda, etc.)."
 echo 
-echo "2) It is assumed you are using the EN_US region and a US keyboard."
+echo "2) It is assumed you are using the EN_US region and a standard US keyboard."
 echo 
 echo "3) It is assumed you are booted in UEFI mode."
 echo 
-echo "4) This script will use the GRUB bootloader, and will NOT set up secure boot, as there's too many variables involded in setting it up."
+echo "4) This script will use the GRUB bootloader, and will NOT set up secure boot, as there's too many variables involved in setting it up."
 echo "   If you want to set up secure boot, there's very good documentation on the Arch Linux Wiki on how to do so."
 read -p "Press ENTER when ready."
 echo 
